@@ -1,0 +1,117 @@
+body{      
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #fff;  }
+
+.checked {text-decoration: line-through;}
+.disabled {display: none; margin:0;}
+.disable {display: none; margin:0;}
+.enable {-webkit-animation: fadeIn .5s;  animation: fadeIn .5s forwards;}
+
+li {
+    list-style-type: none;}
+ul {
+    margin-left: 10px; 
+    padding-left: 15px;}
+
+#newProject input {
+display: block;
+width: 80%;
+padding: 15px;
+margin:25px;
+border: 1px solid #ccc;
+border-radius: 2px;}
+
+.createBtn {
+    padding: 15px;
+    border: 2px solid transparent;
+    border-radius: 2px;
+    background-color: rgba(38,133,232,0.64);
+    color: #fff;
+    margin:0 25px;
+}
+.createBtnCancel, .deadlineSelect button:nth-child(4), .commentArea > button:nth-child(3){
+    padding: 15px;
+    border: 2px solid transparent;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #888;  
+    margin:0 25px; 
+}
+
+.inputTask {
+    width: 80%;
+    padding: 15px;
+    margin:25px;
+    border: 1px solid #ccc;
+    border-radius: 2px;}
+
+.addTask, .deadlineSelect button:nth-child(3), .commentArea > button:nth-child(2) {
+    padding: 15px;
+    border: 2px solid transparent;
+    border-radius: 2px;
+    background-color: rgba(123,192,147,0.8);
+    color: #fff;
+    margin:0 25px;
+}
+
+.project {
+    width: 80%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    margin:25px;    
+    font-size: 22px;
+}
+.task {font-size: 16px; color: #222;}
+.deadlineSelect{width: 50%;text-indent: 25px; margin-top: 25px; color: #82828c}
+.deadlineSelect input{
+    width: 80%;
+    padding: 15px;
+    margin: 12.5px 25px;
+    border: 1px solid #ccc;
+    border-radius: 2px;}
+.commentArea {width: 50%;text-indent: 25px; margin-top: 25px; color: #82828c}
+.addComment{
+    width: 80%;
+    padding: 15px;
+    margin: 12.5px 25px;
+    border: 1px solid #ccc;
+    border-radius: 2px;}
+
+.comment {font-size: 10px;margin: 25px;}
+.commentTxt {font-size: 16px; color: #000;}
+.deadlineCont {color: rgb(123,192,147);font-size: 12px; font-style: italic;}
+
+.commentBtn, .deadlineBtn, .deleteBtn {    
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 8px;
+    text-align: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 8px;
+    left: 50px;
+}
+
+.commentBtn {background-image: url(../img/comment.png);}
+.deadlineBtn {background-image: url(../img/clock.png);}
+.deleteBtn {background-image: url(../img/bin.png);}
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; display: none; height: 0;}
+    100% { opacity: 1;display: block;height:inherit;}
+}  
+@keyframes fadeIn {
+    0% { opacity: 0; display: none; height: 0;}
+    100% { opacity: 1;display: block;height:inherit;}
+}
+
+@-webkit-keyframes fadeOut {
+    from { opacity: 1; display: block;height:inherit;}
+      to { opacity: 0; display: none;height: 0;}
+}  
+@keyframes fadeOut {
+    from { opacity: 1; display: block;height:inherit;}
+      to { opacity: 0; display: none;height: 0;}
